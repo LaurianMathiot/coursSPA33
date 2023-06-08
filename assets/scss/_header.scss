@@ -1,0 +1,23 @@
+header {
+    padding: 1vh 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.132);
+
+
+    .img-container {
+        height: 100px;
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    .nav-link {
+        color: $primaryColor;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $secondaryColor;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+
+footer {
+    background: linear-gradient(to bottom, white 15%, $tertiaryColor 15%);
+    color: white;
+    padding-bottom: 6vh;
+    
+    img {
+        background-color: white;
+        height: 80px;
+        margin-top: -15px;
+        margin-bottom: 8vh;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.038);
+    }
+
+    .container {
+    background-color: $primaryColor;
+    padding: 0 3vw 3vh;
+
+        a {
+            color: white;
+
+            p {
+                display: inline-block;
+            }
+
+            svg {
+                background-color: white;
+                border-radius: 100px;
+                padding: 5px 6px;
+                margin:0 3px 4px 0;
+            }
+        }
+
+        svg {
+            fill: $secondaryColor;
+        }
+
+        .social {
+            gap: 20px;
+        }
+
+        
+    }
+}

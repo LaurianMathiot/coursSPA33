@@ -1,0 +1,12 @@
+
+
+@mixin line($borderColor, $lineWidth, $bottom) {
+    content: "";
+    height: 1px;
+    width: $lineWidth;
+    border-bottom: 2px solid $borderColor;
+    position: absolute;
+    left: 50%;
+    bottom: $bottom;
+    transform: translateX(-50%);
+}

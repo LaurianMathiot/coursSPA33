@@ -1,0 +1,205 @@
+* {
+  list-style-type: none;
+  text-decoration: none !important;
+  font-family: "Roboto Regular";
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  color: #22234F !important;
+  text-align: center;
+  position: relative;
+}
+h1::after, h2::after {
+  content: "";
+  height: 1px;
+  width: 110px;
+  border-bottom: 2px solid #EF4D55;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+
+h1 {
+  font-size: 1.3rem !important;
+}
+
+h2 {
+  font-size: 1.1rem !important;
+}
+
+section {
+  padding: 5vh 0;
+}
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+header {
+  padding: 1vh 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.132);
+}
+header .img-container {
+  height: 100px;
+}
+header .img-container img {
+  height: 100%;
+  width: auto;
+}
+header .nav-link {
+  color: #22234F;
+  text-transform: uppercase;
+}
+header .nav-link:hover {
+  color: #EF4D55;
+}
+
+#bienvenue .row1 {
+  margin-top: 6vh;
+  gap: 1rem;
+}
+#bienvenue .row1 .dog, #bienvenue .row1 .cat {
+  height: 25vh;
+  background-size: cover;
+  max-width: calc(50% - 1rem);
+}
+#bienvenue .row1 .dog a, #bienvenue .row1 .cat a {
+  padding: 15px 18px;
+  background-color: #22234F;
+  color: white;
+  margin-bottom: 10px;
+}
+#bienvenue .row1 .dog {
+  background-image: url(../images/chiens-adoption-spa.jpg);
+}
+#bienvenue .row1 .cat {
+  background-image: url(../images/chats-adoption-spa.jpg);
+}
+#bienvenue .row2 {
+  margin-top: 10vh;
+}
+#bienvenue .row2 a {
+  position: relative;
+}
+#bienvenue .row2 a img {
+  height: 120px;
+  width: auto;
+}
+#bienvenue .row2 a p {
+  text-transform: uppercase;
+  color: #22234F;
+  margin-top: 10px;
+}
+#bienvenue .row2 a::after {
+  content: "";
+  height: 1px;
+  width: 0px;
+  border-bottom: 2px solid #EF4D55;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  transition: all 0.2s ease-in;
+}
+#bienvenue .row2 a:hover::after {
+  content: "";
+  height: 1px;
+  width: 150px;
+  border-bottom: 2px solid #EF4D55;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
+
+#slider {
+  background: linear-gradient(to top, white 20%, #EAF0FF 20%);
+  margin-top: 5vh;
+}
+#slider .container {
+  margin: 5vh auto;
+}
+#slider .container .swiper {
+  width: 100%;
+  height: 100%;
+}
+#slider .container .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+}
+#slider .container .swiper .swiper-slide:hover .displaynone {
+  display: block;
+}
+#slider .container .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#slider .container .swiper .swiper-slide > div {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #22234F;
+  background-color: white;
+  padding: 4% 0;
+  width: 80%;
+}
+#slider .container .swiper .swiper-slide > div p {
+  margin: 0;
+}
+#slider .container .swiper .swiper-slide > div .displaynone {
+  display: none;
+}
+#slider .container .swiper .swiper-slide > div .displaynone p {
+  font-size: 0.8rem;
+  font-family: "Roboto Bold";
+}
+#slider .container .swiper .swiper-slide > div .displaynone p span {
+  color: grey;
+}
+
+footer {
+  background: linear-gradient(to bottom, white 15%, #EAF0FF 15%);
+  color: white;
+  padding-bottom: 6vh;
+}
+footer img {
+  background-color: white;
+  height: 80px;
+  margin-top: -15px;
+  margin-bottom: 8vh;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.038);
+}
+footer .container {
+  background-color: #22234F;
+  padding: 0 3vw 3vh;
+}
+footer .container a {
+  color: white;
+}
+footer .container a p {
+  display: inline-block;
+}
+footer .container a svg {
+  background-color: white;
+  border-radius: 100px;
+  padding: 5px 6px;
+  margin: 0 3px 4px 0;
+}
+footer .container svg {
+  fill: #EF4D55;
+}
+footer .container .social {
+  gap: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
